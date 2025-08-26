@@ -1,0 +1,128 @@
+/* login.css */
+
+/* General login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+/* Light theme background */
+.login-container.light {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+
+/* Dark theme background */
+.login-container.dark {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* Login box */
+.login-box {
+  width: 100%;
+  max-width: 400px; /* Fixed max-width */
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode login box */
+.login-container.dark .login-box {
+  background: rgba(30, 41, 59, 0.95);
+  color: #f1f5f9;
+}
+
+/* Heading */
+.login-box h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.login-box p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+.login-container.dark .login-box p {
+  color: #cbd5e1;
+}
+
+/* Input fields */
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 1rem;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.login-container.dark .login-box input[type="email"],
+.login-container.dark .login-box input[type="password"] {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+}
+
+/* Input focus */
+.login-box input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Login button */
+.login-box button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* Forgot password / links */
+.login-box .login-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-box .login-links a {
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-box .login-links a:hover {
+  color: #06b6d4;
+}
+
+
+
+
